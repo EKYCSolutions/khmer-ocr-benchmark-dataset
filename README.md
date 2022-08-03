@@ -190,7 +190,7 @@ This open project is initiated in collaboration with institutions from different
 
 ## License
 
-Distributed under the MIT License. See [LICENSE.txt](./LICENSE.txt) for more information.
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
 <!-- CONTACT -->
 
