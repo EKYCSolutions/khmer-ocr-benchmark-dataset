@@ -68,7 +68,6 @@ def read_tab_separated_file(filename):
     labels = []
     with open(filename, 'r') as f:
         for line in f:
-            print(line)
             pred, label = line.split('\t')
             predictions.append(pred.strip())
             labels.append(label.strip())
@@ -80,14 +79,11 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    if args.pred_label_pair is None:
+    if args.input is None:
         raise AssertionError("You need to provide a file for evaluation. Use --help for getting more info.")
 
 
-    predictions = []
-    labels = []
-
-    predictions, labels = read_tab_separated_file(args.pred_label_pair)
+    predictions, labels = read_tab_separated_file(args.input)
 
     # Valdiation
     assert len(predictions) > 0
@@ -95,5 +91,3 @@ if __name__ == "__main__":
     assert len(predictions) == len(labels)
     
     print(score(predictions, labels, case_sensitive=False))
-
-
