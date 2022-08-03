@@ -2,6 +2,8 @@
 <!-- PROJECT LOGO -->
 <h1 align="center">Khmer OCR Benchmark Dataset</h1>
 
+![image](https://img.shields.io/github/license/EKYCSolutions/khmer-ocr-benchmark-dataset) ![image](https://img.shields.io/github/contributors/EKYCSolutions/khmer-ocr-benchmark-dataset) ![image](https://img.shields.io/github/stars/EKYCSolutions/khmer-ocr-benchmark-dataset)
+
 This open-source project aims to provide a standardized benchmark dataset for Khmer Optical Character Recognition (OCR) engine. It consists of different difficulty levels where achieving good results on each level provides insights into specific capabilities of the OCR engine.
 
 <!-- TABLE OF CONTENTS -->
