@@ -123,7 +123,7 @@ OCR engine that performs well on this level can read Khmer hand-written text in 
 <!-- How to Evaluate with the Benchmark Dataset -->
 # How to Evaluate with the Benchmark Dataset
 
-1. Download the dataset from one of the levels [here](https://drive.google.com/drive/folders/1D8gzeJe2S9iMHAoVAeIumHwbXSMkksWx?usp=sharing).
+1. Download the dataset from one of the levels <a href="https://drive.google.com/drive/folders/1D8gzeJe2S9iMHAoVAeIumHwbXSMkksWx?usp=sharing" target="_blank">here</a></td>.
 
 2. Test the dataset with your own OCR engine and provide the output in one text file where each line in the text file consists of a pair of `prediction` and `label` separated by a `tab`.
 
@@ -131,13 +131,13 @@ OCR engine that performs well on this level can read Khmer hand-written text in 
 ការដើរលេង  ការដើរលេង
 ```
 
-3. Install the neccessary python packages from `requirements.txt`
+3. Install the neccessary python packages from [requirements.txt](./requirements.txt)
 
 ```shell
 pip install -r requirements.txt
 ```
 
-4. Start the evaluation using `scripts/evaluate.py`.
+4. Start the evaluation using [scripts/evaluate.py](./scripts/evaluate.py).
 
 ```shell
 python scripts/evaluate.py --input PATH_TO_OCR_OUTPUT_FILE
