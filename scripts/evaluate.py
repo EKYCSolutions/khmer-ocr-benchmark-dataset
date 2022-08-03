@@ -68,6 +68,7 @@ def read_tab_separated_file(filename):
     labels = []
     with open(filename, 'r') as f:
         for line in f:
+            print(line)
             pred, label = line.split('\t')
             predictions.append(pred.strip())
             labels.append(label.strip())
@@ -75,30 +76,18 @@ def read_tab_separated_file(filename):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Arguments to evaluate OCR')
-    parser.add_argument('--predictions', type=str, help='File that consists of a list of predictions')
-    parser.add_argument('--labels', type=str, help='File that consists of a list of labels')
-    parser.add_argument('--pred-label-pair', type=str, help='File that consists of a list of prediction, label pair')
+    parser.add_argument('--input', type=str, help='File that consists of a list of prediction, label pair')
 
     args = parser.parse_args()
 
-    if (args.pred_label_pair is None) and (args.predictions is None and args.labels is None):
+    if args.pred_label_pair is None:
         raise AssertionError("You need to provide a file for evaluation. Use --help for getting more info.")
 
 
     predictions = []
     labels = []
 
-    # Input By Two Files
-    if args.pred_label_pair is None:
-        if args.predictions is None or args.labels is None:
-            raise AssertionError("You need to provide both files for predictions and labels")
-    
-        predictions = read_file(args.predictions)
-        labels = read_file(args.labels)
-
-    # Input by a single file, each line consists of prediction and label separated by tab
-    else:
-        predictions, labels = read_tab_separated_file(args.pred_label_pair)
+    predictions, labels = read_tab_separated_file(args.pred_label_pair)
 
     # Valdiation
     assert len(predictions) > 0
