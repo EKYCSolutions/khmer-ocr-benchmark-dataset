@@ -1,6 +1,8 @@
 <div id="top"></div>
 <!-- PROJECT LOGO -->
-<h1 align="center">Khmer OCR Benchmark Dataset</h1>
+<!-- <h1 align="center">Khmer OCR Benchmark Dataset</h1> -->
+
+![image](./assets/logos/logo.png)
 
 ![image](https://img.shields.io/github/license/EKYCSolutions/khmer-ocr-benchmark-dataset) ![image](https://img.shields.io/github/contributors/EKYCSolutions/khmer-ocr-benchmark-dataset) ![image](https://img.shields.io/github/stars/EKYCSolutions/khmer-ocr-benchmark-dataset)
 
