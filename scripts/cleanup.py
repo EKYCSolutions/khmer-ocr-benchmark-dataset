@@ -3,17 +3,11 @@ import glob
 import os
 import argparse
 
-def is_directory(path):
-  if (os.path.isdir(path)):
-    return True
-  else: 
-    return False
-
 def read_files_path(files_path):
   path_list = []
   
-  if (is_directory(files_path)):
-    for path in glob.iglob(files_path + '/**/*.json', recursive=True):
+  if (os.path.isdir(files_path)):
+    for path in glob.iglob(os.path.join(files_path, '**/*.json'), recursive=True):
       path_list.append(path)
     return path_list
   else:
@@ -40,11 +34,11 @@ def delete_image_data(data_path):
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()
-  parser.add_argument('--input', type=str, help='File that consists of a list of prediction, label pair')
+  parser.add_argument('--input', type=str, help='Provide the pathname that consists of JSON files')
 
   args = parser.parse_args()
 
   if args.input is None:
-    raise AssertionError("You need to provide a file for evaluation. Use --help for getting more info.")
+    raise AssertionError("You need to provide a pathname for cleaning up the imageData. Use --help for getting more info.")
 
   delete_image_data(args.input)
