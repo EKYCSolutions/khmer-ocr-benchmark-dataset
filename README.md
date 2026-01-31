@@ -64,6 +64,19 @@ This level provides testing samples for clean digital images in the form of 15 G
 OCR engine that performs well on this level can read Khmer text from Government Official Posts.
 
 ## Level 2: Scene Text Images
+<table>
+  <tr>
+   <td>
+
+<img src="assets/level-2-task-1.png" width="300px" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td>
+
+<img src="assets/level-2-task-2.png" width="300px" alt="alt_text" title="image_tooltip">
+
+   </td>
+</table>
 
 This level provides testing samples for scene text images which are text in real-world scenery. The images are taken through a mobile device (iPhone 13). There are two tasks at this level each with 400 samples:
 
