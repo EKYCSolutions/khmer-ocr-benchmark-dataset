@@ -65,7 +65,7 @@ OCR engine that performs well on this level can read Khmer text from Government 
 
 ## Level 2: Scene Text Images
 
-This level provides testing samples for scene text images which are text in real-world scenery. The images are taken through mobile devices. There are two tasks at this level:
+This level provides testing samples for scene text images which are text in real-world scenery. The images are taken through a mobile device (iPhone 13). There are two tasks at this level each with 400 samples:
 
 <table>
   <tr>
@@ -150,7 +150,7 @@ python scripts/evaluate.py --input PATH_TO_OCR_OUTPUT_FILE
 # Road Map
 
 - [x] Level 1: Clean Digital Images
-- [ ] Level 2: Scene Text Images
+- [x] Level 2: Scene Text Images
 - [ ] Level 3: Hand Written Images
 
 # Acknowledgments
